@@ -7,7 +7,7 @@
  *
  */
 
-.modal-base {
+.modal {
 	visibility: hidden;
 	position: fixed;
 	overflow-y: auto;
@@ -21,7 +21,7 @@
 	opacity: 0;	
 }
 
-.modal-base.open {
+.modal.open {
 	visibility: visible;
 	-webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
@@ -31,7 +31,7 @@
 	opacity: 1;
 }
 
-.modal {
+.modal-inner {
 	color: #222;
 	position: absolute;
 	background-color: whitesmoke;
@@ -42,7 +42,7 @@
 	top: 1rem;
 }
 
-.modal header {
+.modal-inner header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
