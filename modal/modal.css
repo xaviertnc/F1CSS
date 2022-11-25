@@ -3,14 +3,16 @@
  *  
  * @author  C. Moller <xavier.tnc@gmail.com>
  * 
- * @version 1.0.0 - 05 Oct 2022
+ * @version 1.1.0 - 25 Nov 2022
+ *   - Change .modal => overflow-y:auto to overflow:hidden
  *
  */
 
 .modal {
 	visibility: hidden;
+	overflow: hidden;
 	position: fixed;
-	overflow-y: auto;
+	/*overflow-y: auto;*/
 	top: 0;
 	left: 0;
 	right: 0;
