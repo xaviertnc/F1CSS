@@ -1,0 +1,68 @@
+/**
+ * F1CSS - Menu - 10 Dec 2022
+ *  
+ * @author  C. Moller <xavier.tnc@gmail.com>
+ * 
+ * @version 1.0.0 - 10 Dec 2022
+ *
+ */
+
+.menu {
+  --menu-color-text: inherit;
+  --menu-color-acent: rgba(255,255,255,50);
+  --menu-color-text-highlight: inherit;
+  --menu-color-acent-highlight: rgba(255,255,255,90);
+  --submenu-color-background: white;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 0.5em;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5em 0.5rem 1em;
+  position: relative;
+  white-space: nowrap;
+  opacity: 0.8;
+}
+
+.menu .active a,
+.menu li:hover a {
+  opacity: 1;
+}
+
+.menu li a::after {
+  content: " ";
+  background-color: var(--menu-color-acent);;
+  position: absolute;
+  width: calc(100% - 1rem);
+  bottom: 0.67rem;
+  left: 0.5rem;
+  height: 2px;
+}
+
+.menu .active a::after,
+.menu li:hover a::after {
+  background-color: var(--menu-color-acent-highlight);
+}
+
+.menu a {
+  color: var(--menu-color-text);
+  text-decoration: none;
+}
+
+.has-submenu {
+/*  overflow: visible;*/
+/*  height: 1rem;*/
+}
+
+.submenu {
+  position: absolute;
+  background-color: #var(--submenu-color-background);
+  width: fit-content;
+  z-index: 10;
+  left: 0;
+}
