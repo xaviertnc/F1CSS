@@ -1,0 +1,60 @@
+/**
+ * F1CSS - Layout - 10 Dec 2022
+ *  
+ * @author  C. Moller <xavier.tnc@gmail.com>
+ * 
+ * @version 1.0.0 - 10 Dec 2022
+ *
+ */
+
+body {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+
+header, footer {
+  padding: var(--doc-padding, 0.5rem);
+  justify-content: space-between;
+  width: 100%;
+}
+
+header, footer {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  gap: var(--doc-padding);  
+}
+
+main {
+  flex-direction: column;  
+  display: flex;
+  flex-grow: 1;
+}
+
+.brand {
+  color: white;
+  text-decoration: none;
+}
+
+.brand img {
+  margin-right: var(--doc-padding);
+}
+
+.flex {
+  align-items: center;
+  display: flex;
+  gap: var(--doc-padding);  
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+/*
+.container {
+  max-width: var(--page-width, 1024px);
+  margin: auto;
+}
+*/
+
