@@ -1,0 +1,32 @@
+/**
+ * F1CSS - Reset - 10 Dec 2022
+ *  
+ * @author  C. Moller <xavier.tnc@gmail.com>
+ * 
+ * @version 1.0.0 - 10 Dec 2022
+ *
+ */
+
+:root {
+  --doc-color-dark: black;
+  --doc-color-light: white;
+  --doc-color-acent: orange;
+  --doc-color-primary: midnightblue;
+  --doc-color-secondary: mediumblue;
+  --doc-font-family: sans-serif;
+  --doc-font-size: 15px;
+  --doc-padding: 0.5rem;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+  color: var(--doc-dark-color);
+  background-color: var(--doc-light-color);
+  font-family: var(--doc-font-family);
+  font-size: var(--doc-font-size);
+}
