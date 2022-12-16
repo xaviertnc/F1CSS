@@ -3,7 +3,9 @@
  *  
  * @author  C. Moller <xavier.tnc@gmail.com>
  * 
- * @version 1.0.0 - 10 Dec 2022
+ * @version 1.1.0 - 16 Dec 2022
+ *   - Update * rule.  Change box-sizing from border-box to inherit.
+ *   - Add box-sizing to html element. 
  *
  */
 
@@ -18,15 +20,14 @@
   --doc-padding: 0.5rem;
 }
 
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
+*, ::before, ::after { padding: 0; margin: 0; box-sizing: inherit; }
 
 html {
   color: var(--doc-dark-color);
   background-color: var(--doc-light-color);
   font-family: var(--doc-font-family);
   font-size: var(--doc-font-size);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;  
 }
