@@ -3,14 +3,14 @@
  *  
  * @author  C. Moller <xavier.tnc@gmail.com>
  * 
- * @version 1.0.0 - 10 Dec 2022
+ * @version 1.1.0 - FT - 16 Dec 2022
  *
  */
 
-body {
+body.window {
   flex-direction: column;
   display: flex;
-  height: 100vh;
+  height: 100vh;  
 }
 
 header, footer {
@@ -26,7 +26,7 @@ header, footer {
   gap: var(--doc-padding);  
 }
 
-main {
+body.window > main {
   flex-direction: column;  
   display: flex;
   flex-grow: 1;
@@ -49,6 +49,14 @@ main {
 
 .wrap {
   flex-wrap: wrap;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+.reverse {
+  flex-direction: row-reverse;
 }
 
 /*
