@@ -10,3 +10,8 @@
   - Put back some v1 features, like error colors etc.
   - Add `.form-rows` to replace the `.form-body` and `.form-groups` structural classes.
   - Remove some of the commented code.
+
+## 29 Dec 2022 - DEV - Ver 3.0.0
+  - Adjust --form-spacing to 0.67rem
+  - Adjust `.input` and `.summary` padding.
+  - Move form.css to F1CSS root dir. 

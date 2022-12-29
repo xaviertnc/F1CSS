@@ -3,15 +3,16 @@
  *  
  * @author  C. Moller <xavier.tnc@gmail.com>
  * 
- * @version 2.1.0 - DEV - 17 Dec 2022
- *   - Complete re-write.
- *
+ * @version 3.0.0 - DEV - 29 Dec 2022
+ *   - Adjust --form-spacing to 0.67rem
+ *   - Adjust .input and .summary padding
+ *   - Move to F1CSS root dir. 
  */
 
 form {
   --form-color-error: crimson;
   --form-color-error-darkmode: #c81234;
-  --form-spacing: 1rem;
+  --form-spacing: 0.67rem;
 }
 
 form,
@@ -71,7 +72,7 @@ form,
   border: 1px solid lightgray;
   border-radius: 0.25rem;
   font-size: 0.85rem;
-  padding: 0.25rem 0.67rem;
+  padding: 0.3rem 0.7rem;
   line-height: 1;
 }
 
@@ -104,7 +105,7 @@ form,
   font-style: italic;
   font-size: 0.96rem;
   line-height: 1.25rem;
-  padding: 0.5rem 1rem;
+  padding: 0.34rem 0.67rem;
   height: auto;
 }
 
