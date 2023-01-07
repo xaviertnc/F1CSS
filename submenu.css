@@ -1,0 +1,50 @@
+/**
+ * F1CSS - Submenu - 04 Jan 2023
+ *  
+ * @author  C. Moller <xavier.tnc@gmail.com>
+ * 
+ * @version 1.0.0 - INIT - 04 Jan 2023
+ *
+ */
+
+.submenu__wrapper {
+  --submenu-spacing: 0.34em;
+  --submenu-color-background: white;
+  --submenu-border-radius: 4px;
+}
+
+.submenu__wrapper {
+  overflow: visible;
+}
+
+.submenu {
+  background-color: var(--submenu-color-background);
+  border-radius: var(--submenu-border-radius);
+  box-shadow: 3px 3px 7px 0 #0005;
+  padding: var(--submenu-spacing);
+  position: absolute;
+  width: fit-content;
+  list-style: none;
+  top: calc(100% + 0.34em);
+}
+
+.submenu > li {
+  padding: calc(0.5*var(--menu-spacing));
+}
+
+.submenu > li > a {
+  text-decoration: none;
+}
+
+
+@media (max-width:580px) {
+
+  .submenu {
+    position: relative;
+    background-color: black;
+    margin-right: calc(-1.5*var(--menu-spacing));
+    width: 100%;
+    top: 0;
+  }  
+
+}

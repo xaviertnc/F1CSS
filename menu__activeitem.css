@@ -1,0 +1,31 @@
+/**
+ * F1CSS - Menu Active Item - 04 Jan 2023
+ *  
+ * @author  C. Moller <xavier.tnc@gmail.com>
+ * 
+ * @version 1.0.0 - INIT - 04 Jan 2023
+ *
+ */
+
+.menu > li > a {
+  padding: calc(0.25*var(--menu-spacing)) var(--menu-spacing) var(--menu-spacing);
+}
+
+.menu > li.active > a {
+  opacity: 1;
+}
+
+.menu > li > a span::before {
+  background-color: var(--menu-color-acent);
+  bottom: calc(-0.5*var(--menu-spacing));
+  position: absolute;
+  content: " ";
+  height: 2px;
+  width: 100%;
+  left: 0;
+}
+
+.menu > li.active > a span::before,
+.menu > li:hover > a span::before {
+  background-color: var(--menu-color-acent-highlight);
+}

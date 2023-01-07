@@ -1,0 +1,32 @@
+/**
+ * F1CSS - Submenu Control - 04 Jan 2023
+ *  
+ * @author  C. Moller <xavier.tnc@gmail.com>
+ * 
+ * @version 1.0.0 - INIT - 04 Jan 2023
+ *
+ */
+
+.submenu {
+  display: none;
+}
+
+.submenu[aria-expanded="true"] {
+  display: block;
+}
+
+.submenu__toggle {
+  cursor: pointer;
+}
+
+.submenu__toggle > span::after {
+  margin: 8px 1px 2px 4px;
+  transition: all 0.15s ease-out;
+  border-left: 0.34em solid transparent;
+  border-right: 0.34em solid transparent;
+  border-top: 0.34em solid;
+  display: inline-block;
+  content: " ";
+  height: 0;
+  width: 0; 
+}
