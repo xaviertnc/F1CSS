@@ -15,3 +15,7 @@
     components that one can choose to use or not.
   - Add support for sub menus. Get basics working.
   - Update README.md
+
+## 10 Jan 2023 - DEV - menu__mobile Ver 1.1.0
+  - Change spacing variable to allow the `menu toggle` to align better with
+    the first mobile menu item.
