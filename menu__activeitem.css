@@ -7,16 +7,14 @@
  *
  */
 
-.menu > li > a {
-  padding: calc(0.25*var(--menu-spacing)) var(--menu-spacing) var(--menu-spacing);
-}
-
-.menu > li.active > a {
+.menu > li.active > a,
+.submenu > li.active > a {
   opacity: 1;
 }
 
-.menu > li > a span::before {
-  background-color: var(--menu-color-acent);
+.menu > li > a span::before,
+.submenu > li > a span::before {
+  background-color: transparent;
   bottom: calc(-0.5*var(--menu-spacing));
   position: absolute;
   content: " ";
@@ -25,7 +23,12 @@
   left: 0;
 }
 
+.menu > li:hover > a span::before,
+.submenu > li:hover > a span::before {
+  background-color: var(--menu-color-acent);
+}
+
 .menu > li.active > a span::before,
-.menu > li:hover > a span::before {
+.submenu > li.active > a span::before {
   background-color: var(--menu-color-acent-highlight);
 }

@@ -10,6 +10,7 @@
 .menu__mobile {
   --mobilemenu-spacing: 0.5em;
   --mobilemenu-color-background: #262626;
+  --mobilesubmenu-color-background: #111;
 }
 
 
@@ -44,5 +45,14 @@
   }
 
   .menu > li > a {
-    line-height: 6vh;
+    line-height: 8vh;
   }
+
+  .menu__mobile .submenu {
+    position: relative;
+    background-color: var(--mobilesubmenu-color-background);
+    width: 100%;
+    top: -1vh;
+  }  
+
+}

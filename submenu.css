@@ -3,13 +3,16 @@
  *  
  * @author  C. Moller <xavier.tnc@gmail.com>
  * 
- * @version 1.0.0 - INIT - 04 Jan 2023
+ * @version 2.0.0 - FT - 11 Jan 2023
+ *   - Add `--submenu-color-text`
+ *   - Improve 
  *
  */
 
 .submenu__wrapper {
-  --submenu-spacing: 0.34em;
-  --submenu-color-background: white;
+  --submenu-spacing: 0.5em;
+  --submenu-color-background: inherit;
+  --submenu-color-text: inherit;
   --submenu-border-radius: 4px;
 }
 
@@ -26,25 +29,22 @@
   width: fit-content;
   list-style: none;
   top: calc(100% + 0.34em);
-}
-
-.submenu > li {
-  padding: calc(0.5*var(--menu-spacing));
+  right: 0;
 }
 
 .submenu > li > a {
+  padding: var(--submenu-spacing);
+  color: var(--submenu-color-text);
   text-decoration: none;
+  font-weight: normal;
+  display: block;
+  opacity: 0.8;
 }
 
+.submenu > li:hover > a {
+  opacity: 1;
+}
 
-@media (max-width:580px) {
-
-  .submenu {
-    position: relative;
-    background-color: black;
-    margin-right: calc(-1.5*var(--menu-spacing));
-    width: 100%;
-    top: 0;
-  }  
-
+.submenu > li > a span {
+  position: relative;
 }

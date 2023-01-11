@@ -29,6 +29,7 @@
 
 .menu > li > a {
   color: var(--menu-color-text);
+  padding: calc(0.5*var(--menu-spacing)) var(--menu-spacing);
   text-decoration: none;
   line-height: 2.25em;
   white-space: nowrap;
